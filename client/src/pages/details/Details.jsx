@@ -8,6 +8,7 @@ import Cast from "./cast/Cast";
 import VideosSection from "./videosSection/VideosSection";
 import Similar from "./carousels/Similar";
 import Recommendation from "./carousels/Recommendation";
+import Reviews from "./reviews/Reviews";
 
 const Details = () => {
     const { mediaType, id } = useParams();
@@ -23,6 +24,7 @@ const Details = () => {
             <VideosSection data={data} loading={loading} />
             <Similar mediaType={mediaType} id={id} />
             <Recommendation mediaType={mediaType} id={id} />
+            <Reviews mediaType={mediaType} id={id} />
         </div>
     );
 };
