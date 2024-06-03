@@ -24,7 +24,7 @@ const Details = () => {
             <VideosSection data={data} loading={loading} />
             <Similar mediaType={mediaType} id={id} />
             <Recommendation mediaType={mediaType} id={id} />
-            <Reviews mediaType={mediaType} id={id} />
+            {/* <Reviews mediaType={mediaType} id={id} /> */}
         </div>
     );
 };
